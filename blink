@@ -1,0 +1,18 @@
+uses STArduino;
+const	ledPin = 13;
+
+procedure setup;
+begin
+	pinMode(ledPin,OUTPUT); {Cài đặt chân D13 dưới dạng OUTPUT}
+end;
+procedure loop;
+begin
+	digitalWrite(ledPin, HIGH); {bat den LED (HIGH la co dong dien)}
+	delay(1000); {doi 1 giay}
+	digitalWrite(ledPin, LOW); {tat den LED bang cach thiet lap dong dien = LOW}
+	delay(1000); {doi 1 giay}
+end;
+BEGIN
+	setup;
+	loop;		
+END.
